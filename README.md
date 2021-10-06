@@ -39,3 +39,7 @@ docker run \
     "tomeinc/uncrustify:0.68" \
     uncrustify --check -c mystyle.cfg somefile.c
 ```
+
+
+## credits
+The organization and scripts are heavily based on [silkeh/docker-clang](https://github.com/silkeh/docker-clang)
