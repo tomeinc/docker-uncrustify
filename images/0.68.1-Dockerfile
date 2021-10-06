@@ -1,0 +1,10 @@
+FROM alpine:3.14
+
+RUN apk upgrade --update && \
+    apk add --no-cache make bash build-base cmake python3 git
+
+ENV TAG uncrustify-0.68.1
+ENV BUILD_TYPE cmake
+
+COPY install.sh .
+RUN ./install.sh
